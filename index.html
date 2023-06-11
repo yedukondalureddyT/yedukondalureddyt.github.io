@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roster</title>
+</head>
+
+<style>
+    body {
+        align-content: center;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: x-large;
+        background: url(data:image/jpeg;base64,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);
+        background-repeat: no-repeat;
+        background-attachment: inline;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        padding-left: 180px;
+
+    }
+
+    table {
+        background: url(https://t4.ftcdn.net/jpg/01/67/63/19/240_F_167631939_r5TmpQHvONrQoJdYPTgSQ4zBxc6xP6f7.jpg);
+        align-content: center;
+        background-repeat: no-repeat;
+        border: 1px solid #eee;
+        background-attachment: inline;
+        background-size: cover;
+        background-position: center;
+        width: 75%;
+
+    }
+
+    th,
+    td {
+        padding: 10px 20px;
+        border: 1px solid #000;
+    }
+
+    .animate-charcter {
+        text-transform: uppercase;
+        background-image: linear-gradient(-90deg,
+                #515053 30%,
+                #f1edf6 40%,
+                #a0a8a8 60%,
+                #f9f9ef 90%);
+        background-size: auto auto;
+        background-clip: border-box;
+        background-size: 200% auto;
+        color: #fff;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: textclip 2s linear infinite;
+        display: inline-block;
+        font-size: 30px;
+        text-align: left;
+
+    }
+
+    @keyframes textclip {
+        to {
+            background-position: 200% center;
+        }
+    }
+</style>
+
+<body id="body">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h5 class="animate-charcter"> Timetable using JS</h5>
+            </div>
+        </div>
+    </div>
+    <div class="tab">
+        <script>
+            var s1 = prompt("Please enter subject1 :", "");
+            var s2 = prompt("Please enter subject2 :");
+            var s3 = prompt("Please enter subject3 :", "");
+            var s4 = prompt("Please enter subject4 :");
+            var s5 = prompt("Please enter subject5 :", "");
+            var s6 = prompt("Please enter subject6 :");
+            var s7 = prompt("Please enter subject7 :", "");
+            var s8 = prompt("Please enter subject8 :");
+            var s9 = prompt("Please enter subject9 :", "");
+            var s10 = prompt("Please enter subject10 :");
+            var s11 = prompt("Please enter subject11 :", "");
+            var s12 = prompt("Please enter subject12 :");
+            var s13 = prompt("Please enter subject13 :", "");
+            var s14 = prompt("Please enter subject14 :");
+            var s15 = prompt("Please enter subject15 :", "");
+            var s16 = prompt("Please enter subject16 :");
+            var s17 = prompt("Please enter subject17 :", "");
+            var s18 = prompt("Please enter subject18 :");
+
+            let table = document.createElement('table');
+            let thead = document.createElement('thead');
+            let tbody = document.createElement('tbody');
+
+            table.appendChild(thead);
+            table.appendChild(tbody);
+
+            document.getElementById('body').appendChild(table);
+
+            let r1 = document.createElement('tr');
+            let h_1 = document.createElement('th');
+            h_1.innerHTML = "Subject/period";
+            let h_2 = document.createElement('th');
+            h_2.innerHTML = "9:00 - 10:00";
+            let h_3 = document.createElement('th');
+            h_3.innerHTML = "10:00 - 11:00";
+            let h_4 = document.createElement('th');
+            h_4.innerHTML = "11:00 - 12:00";
+            let h_5 = document.createElement('th');
+            h_5.innerHTML = "13:00 - 14:00";
+            let h_6 = document.createElement('th');
+            h_6.innerHTML = "14:00 - 15:00";
+            let h_7 = document.createElement('th');
+            h_7.innerHTML = "15:00 - 16:00";
+
+            r1.appendChild(h_1);
+            r1.appendChild(h_2);
+            r1.appendChild(h_3);
+            r1.appendChild(h_4);
+            r1.appendChild(h_5);
+            r1.appendChild(h_6);
+            r1.appendChild(h_7);
+            thead.appendChild(r1);
+
+            let r2 = document.createElement('tr');
+            let r2_d1 = document.createElement('td');
+            r2_d1.innerHTML = "Monday";
+            let r2_d2 = document.createElement('td');
+            r2_d2.innerHTML = s1;
+            let r2_d3 = document.createElement('td');
+            r2_d3.innerHTML = s2;
+            let r2_d4 = document.createElement('td');
+            r2_d4.innerHTML = s3;
+            let r2_d5 = document.createElement('td');
+            r2_d5.innerHTML = s4;
+            let r2_d6 = document.createElement('td');
+            r2_d6.innerHTML = s5;
+            let r2_d7 = document.createElement('td');
+            r2_d7.innerHTML = s6;
+
+            r2.appendChild(r2_d1);
+            r2.appendChild(r2_d2);
+            r2.appendChild(r2_d3);
+            r2.appendChild(r2_d4);
+            r2.appendChild(r2_d5);
+            r2.appendChild(r2_d6);
+            r2.appendChild(r2_d7);
+            tbody.appendChild(r2);
+
+            let r3 = document.createElement('tr');
+            let r3_d1 = document.createElement('td');
+            r3_d1.innerHTML = "Tuesday";
+            let r3_d2 = document.createElement('td');
+            r3_d2.innerHTML = s7;
+            let r3_d3 = document.createElement('td');
+            r3_d3.innerHTML = s8;
+            let r3_d4 = document.createElement('td');
+            r3_d4.innerHTML = s9;
+            let r3_d5 = document.createElement('td');
+            r3_d5.innerHTML = s10;
+            let r3_d6 = document.createElement('td');
+            r3_d6.innerHTML = s11;
+            let r3_d7 = document.createElement('td');
+            r3_d7.innerHTML = s12;
+
+            r3.appendChild(r3_d1);
+            r3.appendChild(r3_d2);
+            r3.appendChild(r3_d3);
+            r3.appendChild(r3_d4);
+            r3.appendChild(r3_d5);
+            r3.appendChild(r3_d6);
+            r3.appendChild(r3_d7);
+            tbody.appendChild(r3);
+
+            let r4 = document.createElement('tr');
+            let r4_d1 = document.createElement('td');
+            r4_d1.innerHTML = "Wednesday";
+            let r4_d2 = document.createElement('td');
+            r4_d2.innerHTML = s13;
+            let r4_d3 = document.createElement('td');
+            r4_d3.innerHTML = s14;
+            let r4_d4 = document.createElement('td');
+            r4_d4.innerHTML = s15;
+            let r4_d5 = document.createElement('td');
+            r4_d5.innerHTML = s16;
+            let r4_d6 = document.createElement('td');
+            r4_d6.innerHTML = s17;
+            let r4_d7 = document.createElement('td');
+            r4_d7.innerHTML = s18;
+
+            r4.appendChild(r4_d1);
+            r4.appendChild(r4_d2);
+            r4.appendChild(r4_d3);
+            r4.appendChild(r4_d4);
+            r4.appendChild(r4_d5);
+            r4.appendChild(r4_d6);
+            r4.appendChild(r4_d7);
+            tbody.appendChild(r4);
+
+            let r5 = document.createElement('tr');
+            let r5_d1 = document.createElement('td');
+            r5_d1.innerHTML = "Thursday";
+            let r5_d2 = document.createElement('td');
+            r5_d2.innerHTML = s1;
+            let r5_d3 = document.createElement('td');
+            r5_d3.innerHTML = s2;
+            let r5_d4 = document.createElement('td');
+            r5_d4.innerHTML = s3;
+            let r5_d5 = document.createElement('td');
+            r5_d5.innerHTML = s4;
+            let r5_d6 = document.createElement('td');
+            r5_d6.innerHTML = s5;
+            let r5_d7 = document.createElement('td');
+            r5_d7.innerHTML = s6;
+
+            r5.appendChild(r5_d1);
+            r5.appendChild(r5_d2);
+            r5.appendChild(r5_d3);
+            r5.appendChild(r5_d4);
+            r5.appendChild(r5_d5);
+            r5.appendChild(r5_d6);
+            r5.appendChild(r5_d7);
+            tbody.appendChild(r5);
+
+            let r6 = document.createElement('tr');
+            let r6_d1 = document.createElement('td');
+            r6_d1.innerHTML = "Friday";
+            let r6_d2 = document.createElement('td');
+            r6_d2.innerHTML = s7;
+            let r6_d3 = document.createElement('td');
+            r6_d3.innerHTML = s8;
+            let r6_d4 = document.createElement('td');
+            r6_d4.innerHTML = s9;
+            let r6_d5 = document.createElement('td');
+            r6_d5.innerHTML = s10;
+            let r6_d6 = document.createElement('td');
+            r6_d6.innerHTML = s11;
+            let r6_d7 = document.createElement('td');
+            r6_d7.innerHTML = s12;
+
+            r6.appendChild(r6_d1);
+            r6.appendChild(r6_d2);
+            r6.appendChild(r6_d3);
+            r6.appendChild(r6_d4);
+            r6.appendChild(r6_d5);
+            r6.appendChild(r6_d6);
+            r6.appendChild(r6_d7);
+            tbody.appendChild(r6);
+
+
+
+            let r7 = document.createElement('tr');
+            let r7_d1 = document.createElement('td');
+            r7_d1.innerHTML = "Saturday";
+            let r7_d2 = document.createElement('td');
+            r7_d2.innerHTML = s13;
+            let r7_d3 = document.createElement('td');
+            r7_d3.innerHTML = s14;
+            let r7_d4 = document.createElement('td');
+            r7_d4.innerHTML = s15;
+            let r7_d5 = document.createElement('td');
+            r7_d5.innerHTML = s16;
+            let r7_d6 = document.createElement('td');
+            r7_d6.innerHTML = s17;
+            let r7_d7 = document.createElement('td');
+            r7_d7.innerHTML = s18;
+
+            r7.appendChild(r7_d1);
+            r7.appendChild(r7_d2);
+            r7.appendChild(r7_d3);
+            r7.appendChild(r7_d4);
+            r7.appendChild(r7_d5);
+            r7.appendChild(r7_d6);
+            r7.appendChild(r7_d7);
+            tbody.appendChild(r7);
+
+        </script>
+    </div>
+</body>
+
+</html>
